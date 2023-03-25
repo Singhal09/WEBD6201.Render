@@ -1,14 +1,9 @@
 "use strict";
-//IMPORTS
-
-
-
-//const http = require('http');
+const port = process.env.PORT || 3000;
+let lookup = mime.lookup;
 import fs from 'fs';
 import http from 'http';
 import mime from 'mime-types';
-const port = process.env.PORT || 3000;
-let lookup = mime.lookup;
 
 const server = http.createServer((req,res) => {
     let path : string = req.url as string;
