@@ -13,20 +13,19 @@ const server = http_1.default.createServer((req, res) => {
     if (path === "/" || path === "/home") {
         path = "/index.html";
     }
-    console.log(__dirname);
     let mime_type = lookup(path.substring(1));
     fs_1.default.readFile(__dirname + path, function (err, data) {
         if (err) {
             res.writeHead(404);
-            res.end("Error 404 - File not found" + err.message);
+            res.end("Error 404 - File Not Found" + err.message);
             return;
         }
         res.setHeader("X-Content-Type-Options", "nosniff");
-        res.writeHead(200, { "Content-Type": mime_type });
+        res.writeHead(200, { 'Content-Type': mime_type });
         res.end(data);
     });
 });
 server.listen(port, () => {
-    console.log(`Server running at: ${port}/`);
+    console.log(`Server running at http: ${port}/`);
 });
 //# sourceMappingURL=server.js.map
