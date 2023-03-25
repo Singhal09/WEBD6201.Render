@@ -1,20 +1,23 @@
 "use strict";
 //IMPORTS
-import http from 'http';
-import fs from 'fs';
-import mime from 'mime-types';
 
+
+
+//const http = require('http');
+import fs from 'fs';
+import http from 'http';
+import mime from 'mime-types';
 const port = process.env.PORT || 3000;
 let lookup = mime.lookup;
 
-const server = http.createServer((req, res) => {
+const server = http.createServer((req,res) => {
     let path : string = req.url as string;
     if(path === "/" || path === "/home"){
          path = "/index.html"
     }
 
     console.log(__dirname)
-    
+
 
     let mime_type : string = lookup(path.substring(1)) as string;
 
