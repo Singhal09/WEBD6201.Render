@@ -1,4 +1,4 @@
-"use strict";
+
 import http from 'http';
 import fs from 'fs';
 import mime from 'mime-types';
