@@ -1,17 +1,11 @@
 "use strict";
-//Imports
 import http from 'http';
 import fs from 'fs';
 import mime from 'mime-types';
 
-//Variables
-
 const port = process.env.PORT || 3000;
 let lookup = mime.lookup;
 
-//configuration
-
-//static configuration
 const server = http.createServer((req, res) => {
     let path : string = req.url as string;
     if(path === "/" || path === "/home"){
