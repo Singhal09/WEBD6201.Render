@@ -1,6 +1,6 @@
 "use strict";
 //IMPORTS
-import http from 'http';
+import http from "http";
 import fs from 'fs';
 import mime from 'mime-types';
 

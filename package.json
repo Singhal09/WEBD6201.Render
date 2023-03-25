@@ -1,12 +1,12 @@
 {
   "name": "ICE5",
   "version": "1.0.0",
-  "description": "WEBD6201 - ICE05",
+
   "main": "server.ts",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Sanya Singhal",
+
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
@@ -18,7 +18,8 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.16",
-    "@types/mime-types": "^2.1.1",
-    "@types/node": "^18.15.3"
+    "@types/node": "^18.15.3",
+    "@types/mime-types": "^2.1.1"
+
   }
 }
