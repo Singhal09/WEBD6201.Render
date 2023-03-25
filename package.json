@@ -1,7 +1,7 @@
 {
   "name": "ice",
   "version": "1.0.0",
-  "main": "server.ts",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
@@ -16,8 +16,7 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.16",
-    "@types/node": "^18.15.3",
-    "@types/mime-types": "^2.1.1"
-
+    "@types/mime-types": "^2.1.1",
+    "@types/node": "^18.15.8"
   }
 }
