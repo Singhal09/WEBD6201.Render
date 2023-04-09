@@ -1,0 +1,23 @@
+{
+  "contacts":
+    [
+        {
+          "FullName":
+          "Peter Parker",
+          "ContactNumber":
+          "416-555-5555",
+          "EmailAddress":
+          "peterparker@domain.com"
+        },
+      {
+      "FullName": "Sanya Singhal",
+      "ContactNumber":"988-888-1234",
+      "EmailAddress": "sanya@gmail.com"
+    },
+      {
+      "FullName": "Zeel Sutariya",
+      "ContactNumber":"966-888-1234",
+      "EmailAddress": "zeel@gmail.com"
+    }
+    ]
+}
